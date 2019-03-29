@@ -1,4 +1,5 @@
 # Arduino Robot Car
+The following guide provides instructions for building and programming the Arduino Smart Car kit.
 
 ## Build the Kit
 Follow the instructions below for building the car.
@@ -41,8 +42,15 @@ After attaching the standoffs, use two more 5mm M3 screws to fasten the arduino 
 ![Boards Mounted 1](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/Boards1.JPG)  
 ![Boards Mounted 2](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/Boards2.JPG)
 
-### Step 7: Mount the L298N Motor Driver
+### Step 7: Center the Servo Motor
 
+### Step 8: Mount the Ultrasonic Sensor
 
+### Step 9: Mount the Battery Holder
 
-## Upload the Code
+### Step 10: Wiring the Components
+
+### Step 11: Upload the Code
+Finally, upload the code (Located in the "Code" directory) to the arduino board. Insert batteries into the battery holder and reset the Arduino to operate the vehicle.
+
+## Explaining the Code
