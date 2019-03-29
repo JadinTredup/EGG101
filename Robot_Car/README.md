@@ -45,10 +45,21 @@ After attaching the standoffs, use two more 5mm M3 screws to fasten the arduino 
 ### Step 7: Center the Servo Motor
 
 ### Step 8: Mount the Ultrasonic Sensor
+![Servo Horn](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/MotorSensorMount.JPG)  
+![Mounted Sensor Bottom](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/SensorUnderside.JPG)  
+![Mounted Sensor Top](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/SensorTopside.JPG)  
+![Ziptie Sensor](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/MountedSensor.JPG)  
 
 ### Step 9: Mount the Battery Holder
+![Battery Bottom](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/BatteryBottom.JPG)  
+![Battery Top](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/BatteryTop.JPG)  
 
 ### Step 10: Wiring the Components
+![Motors to Driver](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/DriverWires1.JPG)  
+![Arduino from Driver](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/ArduinoWires1.JPG)  
+![Driver to Arduino](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/DriverWires2.JPG)  
+![Sensor to Arduino](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/SensorWires.JPG) 
+![Full Arduino](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/ArduinoWires2.JPG) 
 
 ### Step 11: Upload the Code
 Finally, upload the code (Located in the "Code" directory) to the arduino board. Insert batteries into the battery holder and reset the Arduino to operate the vehicle.
