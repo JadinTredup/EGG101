@@ -26,4 +26,23 @@ Before we attach the caster to the back of the car, we need to attach four stand
 ![Below Standoffs](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/CasterStandoff1.JPG) 
 ![Above Standoffs](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/CasterStandoff2.JPG)
 
+### Step 5: Attach the Wheels and Caster
+Using four more 5mm M3 screws, mount the caster to the bottom of the board where the standoffs are. After this, mount the two wheels to the motor axles.  
+![Wheels Attached](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/Wheels.JPG)
+
+### Step 6: Mount the Arduino and L298N Motor Driver
+To mount the arduino you must first use 5mm M3 screws to attach two 10mm M3 standoffs to the top of the base in the two spots shown in the picture below.  
+![Arduino Standoffs](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/ArduinoStandoff.JPG)  
+  
+For the L298N motor driver, we will use two of the 20mm M3 standoffs. These standofs are threaded on one side, and so for the motor driver, it is easier to first attach the standoffs to the driver using the M3 nuts shown below.  
+![L298N Driver Standoffs](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/L298NStandoff.JPG)  
+  
+After attaching the standoffs, use two more 5mm M3 screws to fasten the arduino to the standoffs and two 5mm M3 screws to attach the driver's standoffs to the base as seen below.  
+![Boards Mounted 1](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/Boards1.JPG)  
+![Boards Mounted 2](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/Boards2.JPG)
+
+### Step 7: Mount the L298N Motor Driver
+
+
+
 ## Upload the Code
