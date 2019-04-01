@@ -176,6 +176,11 @@ Follow these steps to wiring all of the components, pictures and a table are bel
 ![Full Arduino](https://github.com/JadinTredup/EGG101/blob/master/Robot_Car/Images/ArduinoWires2.JPG) 
 
 ### Step 11: Upload the Code
-Finally, upload the code (Located in the "Code" directory) to the arduino board. Insert batteries into the battery holder and reset the Arduino to operate the vehicle.
+Finally to run the code, follow these steps:
+1. Download this repository and get the "robot_car.ino" file from the "Code" folder.  
+2. Connect the Arduino to your computer via USB cable.  
+3. Use the IDE to upload "robot_car.ino" to the Arduino then disconnect it from the PC.  
+4. Insert batteris into the battery holder and then plug the power plug into the Arduino.  
+5. Hit the "reset" button to initialize the program.  
 
 ## Explaining the Code
