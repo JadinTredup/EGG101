@@ -32,8 +32,7 @@ class ThingSpeaker():
             print('Connection Failed')
 
     def update_cloud(self):
-        #value = self.read_arduino()
-        value = 400
+        value = self.read_arduino()
         self.ch_write.update({1: value})
         time.sleep(0.1)
 
@@ -69,8 +68,8 @@ class ThingSpeakBroadcastGUI():
         while self.RUNNING:
             event, values = window.Read()
             if event == 'Submit':
-                #channel_no, write_key, read_key, port = values
-                channel_no, write_key, read_key = values
+                channel_no, write_key, read_key, port = values
+                #channel_no, write_key, read_key = values
                 self.RUNNING = False
             elif event is None or event == 'Exit':
                 self.RUNNING = False
@@ -80,12 +79,12 @@ class ThingSpeakBroadcastGUI():
         ts = ThingSpeaker(channel_no, write_key, read_key)
         layout = self.create_window(win_type='main')
         window = sg.Window('EGG101 Thingspeak Application - Running', font=(self.font, 12)).Layout(layout)
-        #ts.connect_serial_device(port_name=port)
+        ts.connect_serial_device(port_name=port)
         self.RUNNING = True
 
         # Broadcasting loop
         while self.RUNNING:
-            ts.update_static(400)
+            ts.update_cloud()
             event, values = window.Read()
             if event == 'Exit':
                 window.Close()
@@ -102,13 +101,13 @@ class ThingSpeakBroadcastGUI():
         """
         if win_type is 'info':
             port_list = serial.tools.list_ports.comports()
-            #port_names = port_list[:][0]
+            com_ports = [port.name for port in port_list]
             layout = [[sg.Text('EGG101 - Data Broadcaster', font=(self.font, 16), justification='center')],
                       [sg.Text('Enter Desired Channel to Connect to:', font=(self.font, 10)),
                            sg.Input(do_not_clear=True)],
                       [sg.Text('Enter API Write Key:', font=(self.font, 10)), sg.Input(do_not_clear=True)],
                       [sg.Text('Enter API Read Key:', font=(self.font, 10)), sg.Input(do_not_clear=True)],
-                      #[sg.InputOptionMenu(port_names)],
+                      [sg.Text('Select Serial Port:', font=(self.font, 10)), sg.InputOptionMenu(com_ports)],
                       [sg.Submit(), sg.Cancel()]]
         elif win_type is 'main':
             layout = [[sg.Text('EGG101 - Data Broadcaster', font=(self.font, 16), justification='center')],
