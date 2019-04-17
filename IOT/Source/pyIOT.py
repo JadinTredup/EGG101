@@ -101,7 +101,7 @@ class ThingSpeakBroadcastGUI():
         """
         if win_type is 'info':
             port_list = serial.tools.list_ports.comports()
-            com_ports = [port.name for port in port_list]
+            com_ports = [port.device for port in port_list]
             layout = [[sg.Text('EGG101 - Data Broadcaster', font=(self.font, 16), justification='center')],
                       [sg.Text('Enter Desired Channel to Connect to:', font=(self.font, 10)),
                            sg.Input(do_not_clear=True)],
